@@ -1,0 +1,9 @@
+label {
+    display: inline-block;
+    width: 60px;
+}
+
+fieldset {
+    display: inline;
+    width: 40%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire2</title>
+    <link rel="stylesheet" href="formulaire2.css">
+</head>
+
+<body>
+    <h1>Demonstration sur les formulaires</h1>
+    <fieldset>
+        <legend>Client</legend>
+        <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="post">
+            <label>Nom</label>
+            <input type="text" name="nomC" id="nomC" size="20" maxlength="10"><br><br>
+            <label>Adresse</label>
+            <textarea name="adresseC" id="adresseC" cols="30" rows="4">Valeur initiale</textarea><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Livraison</legend>
+        <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="post">
+            <label>Nom</label>
+            <input type="text" name="nomL" id="nomL" size="20" maxlength="10"><br><br>
+            <label>Adresse</label>
+            <textarea name="adresseL" id="adresseL" cols="30" rows="4">Valeur initiale</textarea>
+    </fieldset>
+    <br><br>
+    <!--attribut size = permet de voir le nb de valeur en meme temps-->
+    <!--attribut multiple = permet den choisir plusieur en meme temps-->
+    <label>Couleurs:</label>
+    <select name="couleur" id="couleur" size="4" multiple>
+        <option>Vert</option>
+        <option>Rouge</option>
+        <option selected>Bleu</option>
+    </select><br>
+    <br>
+    <label>M<input type="radio" name="gender" value="Male"></label>
+    <label>F<input type="radio" name="gender" value="Femme"></label><br><br><br>
+
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Retablir">
+    </form>
+</body>
+
+</html>
