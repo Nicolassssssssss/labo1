@@ -6,13 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire1</title>
+    <link rel="stylesheet" href="formulaire1.css">
 </head>
 
 <body>
     <h1>Demonstration sur les formulaires</h1>
-    <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="post">
+    <div>
+        <form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="post">
+            <label>Nom</label>
+            <input type="text" name="nom" id="nom" size="20" maxlength="10"><br><br>
+            <label>Code Permanent</label>
+            <input type="text" name="code" id="code" size="20" maxlength="10"><br><br>
+            <label>Couleur</label>
+            <select name="couleur" id="couleur">
+                <option>Bleu</option>
+                <option>Rouge</option>
+                <option>Orange</option>
+                <option>Jaune</option>
+                <option>Mauve</option>
+            </select><br><br>
+            <label>Langue pref</label>
+            <!--l attribut name est important car si porte le meme name donc devienne mutuellement exclusif, c 1 ou l autre-->
+            <!--checked permet de definir celle de default-->
+            <!--Englober le input entre les 2 balise du label permet de faire le lien et donc un label clickable-->
+            <label>Francais
+                <input type="radio" name="langPref" value="francais" checked>
+            </label>
+            <label>Anglais
+                <input type="radio" name="langPref" value="anglais">
+            </label><br><br>
 
-        
+            <label>Jours</label>
+            <input id="lundi" type="checkbox" name="lundi" value="lundi">
+            <label for="lundi" class="day">Lundi</label>
+
+            <input id="mardi" type="checkbox" name="mardi" value="mardi">
+            <label for="mardi" class="day">Mardi</label>
+
+            <input id="mercredi" type="checkbox" name="mercredi" value="mercredi">
+            <label for="mercredi" class="day">mercredi</label>
+
+            <input id="jeudi" type="checkbox" name="jeudi" value="jeudi">
+            <label for="jeudi" class="day">Jeudi</label>
+
+            <input id="vendredi" type="checkbox" name="vendredi" value="vendredi">
+            <label for="vendredi" class="day">Vendredi</label><br>
+    </div>
+    <br>
+    <input type="submit" value="Envoyer">
+    <input type="reset" value="Retablir">
     </form>
 </body>
 

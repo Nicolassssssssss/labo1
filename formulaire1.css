@@ -1,0 +1,16 @@
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+.day {
+    width:60px;
+}
+
+div {
+    background-color: lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    max-width: 600px;
+}
